@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<extension type="component" version="3.0.0" method="upgrade">
+    <name>FW Food Menu</name>
+    <creationDate>11 December 2019</creationDate>
+    <author>Fastw3b - Effective Web Solutions</author>
+    <authorEmail>manager@fastw3b.net</authorEmail>
+    <authorUrl>https://www.fastw3b.net</authorUrl>
+    <copyright>Copyright (C) 2019 Fastw3b. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <version>2.0.0</version>
+	<description><![CDATA[
+        <p><img alt="Thank you for your business with Fastw3b!" src="../administrator/components/com_fwfoodmenu/assets/images/fw_thankyou_install.png" /></p>
+        <p style="color:#019620;"">Thank you for your choice! Enjoy using our extensions and get in touch to let us know your feedback.</p>
+        <img style="margin: 0 30px 15px 0; float: left;" src="../administrator/components/com_fwfoodmenu/assets/images/icon_fw_food_menu_200.png" />
+        <p><strong>FW Food Menu Component</strong></p>
+        <div><strong>Current module version:</strong> 2.0.0</div>
+        <div><strong>Release date:</strong> 11 December 2019</div>
+        <div><strong>Tested on</strong>: Joomla 3.9.1</div>
+        <div><strong>License</strong>: <a href="https://www.gnu.org/licenses/" target="_blank">GPLv3</a></div>
+        <p>&nbsp;</p>
+        <p>FW Food Menu is an ultimate Joomla! online menu solution with promo options. It works for any food industry website such as cafe, bars, restaurants, pizza places, etc. Menu of the day, New and Special offer can be set for any menu item. Simple category structure, PDF generator and many other helpful features. More to come soon. Stay tuned.</p>
+        <div style="clear:both;"></div>
+        <p><strong>What to do next</strong></p>
+        <ol>
+        <li>Set general discplay settings in Settings section.</li>
+        <li>Add menu categories in Categories section.</li>
+        <li>Add menu items in Menu section.</li>
+        <li>Assign Menu layout to front-end menu item and make sure it is published.</li>
+        <li>Configure front-end menu item options to fine tune menu display. Check options tab for details.</li>
+        <li>Check documentation in <a href="https://fastw3b.net/client-section/extensions" target="_blank">Products section on Fastw3b</a> website if you couldn't get it to work.</li>
+        <li><a href="https://fastw3b.net/client-section/support" target="_blank">Suggest your idea here</a> if you feel like plugin usage can be simplified or better explained.</li>
+        <li><a href="https://fastw3b.net/client-section/support" target="_blank">Report a bug here</a> if you think something must be working and it doesn't.</li>
+        <li><a href="https://extensions.joomla.org/extensions/
+" target="_blank">Leave a positive review on JED</a> if your experience was pleasant and you want to share it with others.</li>
+        </ol>
+        <p><strong>Useful links</strong></p>
+        <div><img src="../administrator/components/com_fwfoodmenu/assets/images/bullet-green.png" style="margin-right: 5px; vertical-align: bottom;" /><a href="https://fastw3b.net/joomla-extensions/foodmenu" title="Joomla Food Menu Page" target="_blank">FW Food Menu page</a> on fastw3b.net.</div>
+        <div><img src="../administrator/components/com_fwfoodmenu/assets/images/bullet-green.png" style="margin-right: 5px; vertical-align: bottom;" />Fastw3b <a href="http://fastw3b.net/client-section" title="Fasw3b Profile Page" target="_blank">Profile page</a> - check your membership status and billing info.</div>
+        <div><img src="../administrator/components/com_fwfoodmenu/assets/images/bullet-green.png" style="margin-right: 5px; vertical-align: bottom;" /><a href="https://fastw3b.net/client-section/transactions" title="Payments Page" target="_blank">Payments page</a> - check current status of your recent transactions.</div>
+        <div><img src="../administrator/components/com_fwfoodmenu/assets/images/bullet-green.png" style="margin-right: 5px; vertical-align: bottom;" />Follow us on Twitter and Facebook to know latest news and updates.</div>
+        <p>&nbsp;</p>
+        <p>Thanks for using our extensions and services!<br />Copyright &copy; 2007 - 2018 <a href="https://fastw3b.net" targent="_blank">Fastw3b</a>.</p>
+        	]]></description>
+	<install type="component">
+		<sql>
+			<file driver="mysql" charset="utf8">install.sql</file>
+		</sql>
+	</install>
+    <installfile>install.script.php</installfile>
+    <scriptfile>install.script.php</scriptfile>
+	<files folder="site">
+        <filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>fwfoodmenu.php</filename>
+		<filename>router.php</filename>
+		<folder>assets</folder>
+		<folder>elements</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	<languages folder="site/language">
+		<language tag="ar-AA">ar-AA/ar-AA.com_fwfoodmenu.ini</language>
+		<language tag="de-DE">de-DE/de-DE.com_fwfoodmenu.ini</language>
+		<language tag="en-GB">en-GB/en-GB.com_fwfoodmenu.ini</language>
+		<language tag="es-ES">es-ES/es-ES.com_fwfoodmenu.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.com_fwfoodmenu.ini</language>
+		<language tag="it-IT">it-IT/it-IT.com_fwfoodmenu.ini</language>
+		<language tag="pt-PT">pt-PT/pt-PT.com_fwfoodmenu.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.com_fwfoodmenu.ini</language>
+		<language tag="tr-TR">tr-TR/tr-TR.com_fwfoodmenu.ini</language>
+		<language tag="zh-CN">zh-CN/zh-CN.com_fwfoodmenu.ini</language>
+	</languages>
+    <media folder="media" destination="com_fwfoodmenu">
+		<filename>index.html</filename>
+		<folder>menu</folder>
+    </media>
+	<administration>
+		<menu>COM_FWFOODMENU</menu>
+        <submenu>
+            <menu view="menu">FWFM_MENU_DASHBOARD</menu>
+            <menu view="category">FWFM_MENU_CATEGORIES</menu>
+            <menu view="items">FWFM_MENU_MENU</menu>
+            <menu view="addon">FWFM_MENU_ADDONS</menu>
+            <menu view="data">FWFM_MENU_DATA_MANAGEMENT</menu>
+            <menu view="translation">FWFM_MENU_TRANSLATIONS</menu>
+            <menu view="css">FWFM_MENU_STYLES</menu>
+            <menu view="settings">FWFM_MENU_SETTINGS</menu>
+        </submenu>
+		<files folder="admin">
+            <filename>install.script.php</filename>
+			<filename>install.sql</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>fwfoodmenu.php</filename>
+			<folder>assets</folder>
+			<folder>helpers</folder>
+			<folder>layouts</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		<languages folder="admin/language">
+			<language tag="ar-AA">ar-AA/ar-AA.com_fwfoodmenu.ini</language>
+			<language tag="ar-AA">ar-AA/ar-AA.com_fwfoodmenu.sys.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_fwfoodmenu.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_fwfoodmenu.sys.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fwfoodmenu.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fwfoodmenu.sys.ini</language>
+			<language tag="es-ES">es-ES/es-ES.com_fwfoodmenu.ini</language>
+			<language tag="es-ES">es-ES/es-ES.com_fwfoodmenu.sys.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.com_fwfoodmenu.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.com_fwfoodmenu.sys.ini</language>
+			<language tag="it-IT">it-IT/it-IT.com_fwfoodmenu.ini</language>
+			<language tag="it-IT">it-IT/it-IT.com_fwfoodmenu.sys.ini</language>
+			<language tag="pt-PT">pt-PT/pt-PT.com_fwfoodmenu.ini</language>
+			<language tag="pt-PT">pt-PT/pt-PT.com_fwfoodmenu.sys.ini</language>
+			<language tag="ru-RU">ru-RU/ru-RU.com_fwfoodmenu.ini</language>
+			<language tag="ru-RU">ru-RU/ru-RU.com_fwfoodmenu.sys.ini</language>
+			<language tag="tr-TR">tr-TR/tr-TR.com_fwfoodmenu.ini</language>
+			<language tag="tr-TR">tr-TR/tr-TR.com_fwfoodmenu.sys.ini</language>
+			<language tag="zh-CN">zh-CN/zh-CN.com_fwfoodmenu.ini</language>
+			<language tag="zh-CN">zh-CN/zh-CN.com_fwfoodmenu.sys.ini</language>
+		</languages>
+	</administration>
+	<updateservers>
+		<server type="collection" priority="1" name="FW Food Menu"><![CDATA[https://fastw3b.net/index.php?option=com_fwsales&view=updates&layout=package&format=raw&package=com_fwfoodmenu&dummy=extension.xml]]></server>
+	</updateservers>
+</extension>
